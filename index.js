@@ -24,8 +24,89 @@ console.log(res4); // NaN
 console.log(typeof res4); // ""number""*/
 
 //Завдання 3
-const isAdult = +prompt("How old are you?");
-if(isAdult<=0||isAdult>110||)
-isAdult >= 18 ? console.log("You are adult") : console.log("You are not adult"); 
+/*let isAdult = +prompt("How old are you?");
+if (isAdult <= 0 || isAdult > 125 || isNaN(Number(isAdult))) {
+    "Incorrect input";
+} else {
+    isAdult >= 18 ? "You are adult" : "You are not adult";
+}*/
 
-Використовуючи функцію prompt() задайте користувачу питання про досягнення ним повнолітнього віку. Результат запишіть в змінну isAdult. В залежності від отриманого значення виведіть відповідне повідомлення про статус особи. Наприклад: при виконанні умови вік більше 18 вивести “Ви досягли повнолітнього віку”. Якщо вік менше 18 років вивести “Ви ще надто молоді”
+//Завдання 4
+/*let maxIncludedValue;
+
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+function inputNumbers(array) {
+  let arrayCopySort = [...array].sort(compareNumbers);
+  let j = 1;
+  let includeArrayIndex = [];
+  let includeArrayValue = [];
+
+  for (let i = 0; i < arrayCopySort.length; i++) {
+    if (arrayCopySort[i] === arrayCopySort[i + 1]) {
+      j++;
+    } else {
+      includeArrayIndex.push(j);
+      includeArrayValue.push(arrayCopySort[i]);
+      j = 1;
+    }
+  }
+
+  maxIncludedValue = includeArrayIndex.findIndex(item => item === Math.max(...includeArrayIndex));
+  let filteredArray = array.filter((item) => item !== includeArrayValue[maxIncludedValue]);
+
+  console.log(arrayCopySort);
+  console.log(includeArrayIndex);
+  console.log(includeArrayValue);
+  console.log(maxIncludedValue);
+  console.log(filteredArray);
+}*/
+
+//Завдання 5
+/*let firstTriangleSide = +prompt("Enter triangle side AB:");
+if (firstTriangleSide <= 0 || isNaN(Number(firstTriangleSide))) {
+    "Incorrect input";
+} else {
+  let secondTriangleSide = +prompt("Enter triangle side AC:");
+  if (secondTriangleSide <= 0 || isNaN(Number(secondTriangleSide))) {
+    "Incorrect input";
+  } else { 
+    let thirdTriangleSide = +prompt("Enter triangle side BC:");
+    if (thirdTriangleSide <= 0 || isNaN(Number(thirdTriangleSide))) {
+      "Incorrect input";
+    } else { 
+      let squer = 1 / 4 * Math.sqrt((firstTriangleSide + secondTriangleSide + thirdTriangleSide) * (secondTriangleSide + thirdTriangleSide - firstTriangleSide) * (firstTriangleSide + thirdTriangleSide - secondTriangleSide) * (firstTriangleSide + secondTriangleSide - thirdTriangleSide));
+      console.log(squer.toFixed(3));
+      if (Math.pow(firstTriangleSide, 2) + Math.pow(secondTriangleSide, 2) === Math.pow(thirdTriangleSide, 2) || Math.pow(firstTriangleSide, 2) + Math.pow(thirdTriangleSide, 2) === Math.pow(secondTriangleSide, 2) || Math.pow(firstTriangleSide, 2) === Math.pow(secondTriangleSide, 2) + Math.pow(thirdTriangleSide, 2)) {
+        console.log("Triangle is right triangle");
+      } else { 
+        console.log("Triangle is not a right triangle");
+      }
+    }
+  }
+}*/
+
+//Завдання 6
+/*const mathOperations = function (a, b, op) { 
+  if (isNaN(Number(a)) || isNaN(Number(b)) || isNaN(Number(op))) {
+    return "Incorrect input"
+  } else {
+    switch (op) {
+      case 1: console.log(a - b);
+        break;
+
+      case 2: console.log(a * b);
+        break;
+      case 3: console.log(a / b);
+        break;
+      default: console.log(a + b);
+    }
+  }
+}*/
+
+
+
+
+
